@@ -369,6 +369,9 @@
   .max-w-xl {
     max-width: var(--container-xl);
   }
+  .flex-2 {
+    flex: 2;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -460,6 +463,10 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .border-5 {
+    border-style: var(--tw-border-style);
+    border-width: 5px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
