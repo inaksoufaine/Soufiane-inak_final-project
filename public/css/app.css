@@ -1,0 +1,52 @@
+.les-paren {
+    padding: 2rem 5rem;
+}
+.titel{
+    font-size:40px;
+    font-weight: 700;
+    font-family: serif;
+}
+.second-div{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#eb8299;
+    height: 22vh;
+    gap: 5px;
+    border-radius: 20px;
+}
+.second-div h1{
+    color:white;
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 1;
+    font-family: serif;
+    padding-top:5px;
+}
+.second-div p{
+    color: white;
+    font-size: 20px;
+    opacity: 75%;
+}
+.boutton{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+   
+}
+.button-1{
+    background-color: white;
+    padding: 2px;
+    padding: 2px 8px;
+    border: 1px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.button-1:hover{
+    background-color: gray;
+    
+}
+
+
+

@@ -5,58 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Voices</title>
-    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="./public/css/output.css">
+    <link rel="stylesheet" href="../Soufiane-inak_final project/public/css/app.css">
 </head>
 
 
-<body class="mx-auto   rounded-2xl border border-white/70 bg-[#fff5f5] shadow-xl">
+<body class="mx-auto h-100% w-ful  rounded-2xl border border-white/80 bg-[#fff5f5] shadow-xl">
 
 
 
-    <!-- Navbar -->
     <nav
-        class="flex flex-wrap items-center justify-between gap-4 border-b border-[#f1d1d7] bg-white/80 px-5 py-4 md:px-10">
-
+        class="relative flex flex-wrap items-center justify-between border-b border-[#f1d1d7] bg-white/100 px-5 py-4 md:px-10">
         <div class="flex items-center gap-2">
             <img class="h-14 w-14 rounded-full object-contain mix-blend-multiply"
-                src="public/image/Gemini_Generated_Image_lqbm0mlqbm0mlqbm.jpg" alt="Real Voices Logo">
-
-            <div class="flex flex-col">
-                <h3 class="font-serif text-2xl font-bold text-[#510d24]">
-                    REAL VOICES
-                </h3>
-                <p class="text-[10px] font-semibold text-[#510d24]">
-                    Responsible Media. A Safer Society.
-                </p>
+                src="./public/image/Gemini_Generated_Image_lqbm0mlqbm0mlqbm.jpg" alt="Real Voices Logo" />
+            <div>
+                <h3 class="font-serif text-2xl font-bold text-[#510d24]">REAL VOICES</h3>
+                <p class="text-[10px] font-semibold text-[#510d24]">Responsible Media. A Safer Society.</p>
             </div>
         </div>
 
-        <div class="hidden items-center gap-2 text-sm font-semibold text-[#310b18] lg:flex">
+        <input type="checkbox" id="nav-toggle" class="peer hidden" />
 
-            <a href="#home" class="rounded-full bg-[#650e2c] px-5 py-2 text-white">
-                Home
-            </a>
+        <label for="nav-toggle" class="cursor-pointer rounded-xl p-2 text-[#510d24] hover:bg-[#f9e1e7] lg:hidden">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </label>
 
-            <a href="./pages/Better-Words.html" class="rounded-full px-4 py-2 transition hover:bg-[#f9e1e7]">
-                Better Words
-            </a>
-
-            <a href="" class="rounded-full px-4 py-2  hover:bg-[#f9e1e7]">
-                Privacy & Respect
-            </a>
-
-            <a href="" class="rounded-full px-4 py-2 hover:bg-[#f9e1e7]">
-                Media Guidelines
-            </a>
-
-            <a href="" class="rounded-full bg-[#8b153b] px-5 py-2 text-white hover:bg-[#620e2b]">
-                Get Started →
-            </a>
-
+        <div
+            class="mt-4 hidden w-full flex-col gap-2 text-sm font-semibold text-[#310b18] peer-checked:flex lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:items-center">
+            <a href="#" class="rounded-2xl bg-[#650e2c] px-5 py-2 text-white">Home</a>
+            <a href="./public/pages/Better-Words.html"
+                class="rounded-full px-4 py-2 transition hover:bg-[#f9e1e7]">Better Words</a>
+            <a href="./public/pages/Privacy-Respect.html"
+                class="rounded-full px-4 py-2 transition hover:bg-[#f9e1e7]">Privacy & Respect</a>
+            <a href="./public/pages/Media-Guidelines.html"
+                class="rounded-full px-4 py-2 transition hover:bg-[#f9e1e7]">Media Guidelines</a>
+            <a href="./public/pages/get-started.html"
+                class="rounded-full bg-[#8b153b] px-5 py-2 text-center text-white transition hover:bg-[#620e2b]">Get
+                Started →</a>
         </div>
-
     </nav>
-    <!--hero section  -->
     <main id="home">
         <section class="relative grid  grid-cols-1 items-center gap-5 overflow-hidden px-6  md:px-10 lg:grid-cols-2">
 
@@ -64,7 +54,6 @@
 
             <div class="absolute bottom-10 left-0 h-40 w-40 rounded-full bg-[#f9dce2] opacity-60 blur-2xl"></div>
 
-            <!-- Hero Text -->
             <div class=" mb-5 relative z-10 flex flex-col items-start">
 
                 <div class="mb-5 flex items-center gap-3">
@@ -87,7 +76,6 @@
                     without blaming, and reports with respect and empathy.
                 </p>
 
-                <!-- Buttons -->
                 <div class="mt-5 flex flex-wrap items-center gap-8">
 
                     <a href=""
@@ -120,19 +108,18 @@
             </div>
 
 
-            <!-- Hero Image -->
-            <div class=" relative z-10 flex items-center justify-center">
+            <div class="relative">
+                <img class="    mix-blend-multiply bg-none " src="./public/image/image_f4656143.jpg" alt="" width="">
 
 
 
-                <img class="relative z-10 h-[350px] w-full max-w-[540px] object-contain mix-blend-multiply md:h-[430px]"
-                    src="" alt="Illustration representing women's voices and dignity">
+
 
             </div>
 
         </section>
 
-        <section class=" px-5 pb-2 md:px-8">
+        <section class="  pt-5 p-5 relative  md:px-8">
             <div class=" grid   gap-3 lg:grid-cols-4 ">
                 <div
                     class="flex flex-col items-center rounded-2xl border border-[#efd0d7] bg-white/80 px-5 py-5 text-center shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-lg">
@@ -220,31 +207,193 @@
 
         </section>
 
-    </main>
-    <footer>
-        <section class=" flex flex-col gap-5 bg-[#740f32] rounded-lg w-full px-5  lg:flex-row justify-between ">
-            <div class=" flex  gap-4  ">
-                <svg class="flex mt-2.5" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none"
-                    stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                    <path d="M12 3v18M5 6h14M3 20h18M5 6l-3 10h6L5 6zm14 0-3 10h6L19 6zM12 3l-2-1m2 1 2-1"></path>
-                </svg>
-                <p class=" flex text-amber-50 items-center font-semibold opacity-60 ">Responsible journalinm helps build
-                    a safer
-                    ,more equal society</p>
-            </div>
-            <div class="flex items-center gap-4 lg:flex-row  justify-evenly  ">
-                <a href=""><img src="public/image/facebook.png" alt="" width="30"></a>
-                <a href=""><img src="public/image/facebook.png" alt="" width="30"></a>
-                <a href=""><img src="public/image/facebook.png" alt="" width="30"></a>
-                <a href=""><img src="public/image/facebook.png" alt="" width="30"></a>
-                <a href="" class=" backdrop-blur-none object-contain mix-blend-multiply"><img
-                        src="/public/image/autumn-leaf-icon-isolated-vector.jpg" alt="" width="70"></a>
 
 
+        <section class="p-10">
+            <div
+                class="flex flex-col gap-6 border p-10 bg-[#f3d9ca] rounded-lg mt-5  hover:-translate-y-1 hover:shadow-lg transition duration-300">
+
+                <h1 class="font-bold text-3xl font-serif">
+                    Privacy & Dignity
+                    <br>
+                    Checklist
+                </h1>
+
+                <label class="flex items-center gap-3">
+                    <input type="checkbox" checked>
+                    <p>Obtain explicit consent before publishing</p>
+                </label>
+
+                <label class="flex items-center gap-3">
+                    <input type="checkbox" checked>
+                    <p>Anonymize sensitive personal details</p>
+                </label>
+
+                <label class="flex items-center gap-3">
+                    <input type="checkbox">
+                    <p>Respect cultural and individual boundaries</p>
+                </label>
+
+                <label class="flex items-center gap-3">
+                    <input type="checkbox">
+                    <p>Review for potential bias or harm</p>
+                </label>
+
+                <button class="bg-[#85434e] text-white rounded-full px-7 py-3 w-fit">
+                    Review & Submit →
+                </button>
 
             </div>
 
         </section>
+        <section class="p-10">
+            <div class="flex-col">
+                <p class="font-serif text-3xl">. JOURNALISM & JUSTICE</p>
+                <h1 class="text-7xl font-serif text-[#85434e]">Re-centering Community Voices.</h1>
+                <p class="text-[30px] text-[#85434e]">Building a media that informs without blaming, and reports with
+                    respect and empathy</p>
+            </div>
+            <div class="py-15">
+                <div>
+                    <p class="text-5xl font-serif  ">1.Our Editorial Commitments</p>
+                </div>
+                <div><samp class=" flex items-center h-[2px] w-100 opacity-75  bg-black rounded-lg "></samp></div>
+                <div class=" grid grid-cols-4 gap-4 p-10">
+                    <div
+                        class="border-2 h-45 flex flex-col items-center justify-center rounded-lg bg-[#eb8b84] hover:translate-x-1 duration-500 hover:bg-[#d7c6be]">
+                        <h1 class="text-5xl font-serif text-amber-600">01</h1>
+                        <p class="text-2xl font-semibold text-red-700 ">Ethical Reporting</p>
+
+                    </div>
+                    <div
+                        class="border-2 h-45 flex flex-col items-center justify-center rounded-lg bg-[#eb8b84]  hover:translate-x-1 duration-500 hover:bg-[#d7c6be]">
+                        <h1 class="text-5xl font-serif text-amber-600">02</h1>
+                        <p class="text-2xl font-semibold text-red-700 ">Diverse Perspectives</p>
+                    </div>
+                    <div
+                        class="border-2 h-45 flex flex-col items-center justify-center rounded-lg bg-[#eb8b84] bg-[#eb8b84] hover:translate-x-1 duration-500 hover:bg-[#d7c6be] ">
+                        <h1 class="text-5xl font-serif text-amber-600">03</h1>
+                        <p class="text-2xl font-semibold text-red-700 ">Responsible Sourcing</p>
+                    </div>
+                    <div
+                        class="border-2 h-45 flex flex-col items-center justify-center rounded-lg bg-[#eb8b84] hover:translate-x-1 duration-500 hover:bg-[#d7c6be] ">
+                        <h1 class="text-5xl font-serif text-amber-600">04</h1>
+                        <p class="text-2xl font-semibold text-red-700 ">Survivor-Centric Langinge</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div>
+                    <p class="text-5xl font-serif  ">2.Our Editorial Commitments</p>
+                </div>
+                <div><samp class=" flex items-center h-[2px] w-100 opacity-75 rounded-lg  bg-black  "></samp></div>
+                <div class=" grid grid-cols-4 gap-4 p-10">
+                    <div
+                        class="border-2 h-45 flex flex-col items-center justify-center rounded-lg bg-[#eb8b84] hover:-translate-y-1 duration-500 hover:bg-[#d7c6be]">
+                        <h1 class="text-5xl font-serif text-amber-600">01</h1>
+                        <p class="text-2xl font-semibold text-red-700 ">Ethical Reporting</p>
+
+                    </div>
+                    <div
+                        class="border-2 h-45 flex flex-col items-center justify-center rounded-lg bg-[#eb8b84] hover:-translate-y-1 duration-500 hover:bg-[#d7c6be]">
+                        <h1 class="text-5xl font-serif text-amber-600">02</h1>
+                        <p class="text-2xl font-semibold text-red-700 ">Diverse Perspectives</p>
+                    </div>
+                    <div
+                        class="border-2 h-45 flex flex-col items-center justify-center rounded-lg bg-[#eb8b84] hover:-translate-y-1 duration-500 hover:bg-[#d7c6be] ">
+                        <h1 class="text-5xl font-serif text-amber-600">03</h1>
+                        <p class="text-2xl font-semibold text-red-700 ">Responsible Sourcing</p>
+                    </div>
+                    <div
+                        class="border-2 h-45 flex flex-col items-center justify-center rounded-lg bg-[#eb8b84]  hover:-translate-y-1 duration-500 hover:bg-[#d7c6be]">
+                        <h1 class="text-5xl font-serif text-amber-600">04</h1>
+                        <p class="text-2xl font-semibold text-red-700 ">Survivor-Centric Langinge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="les-paren">
+            <div class="titel"> 3. Get Involved Call-to-Action.</div>
+            <div class="second-div">
+                <h1>Shape the Narrative.</h1>
+                <p>Join us in building a more just media landicope. Toke the pledge or explore our resources</p>
+                <div class="boutton">
+                     <a class="button-1" href="">Toke the Pledge</a>
+                    <a class="button-1" href="">Explore Toolkit</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer class="">
+        <section class="flex p-15 justify-evenly bg-[#f8e9e2] ">
+            <div class="flex flex-col gap-5">
+                <div>
+                    <h1 class="text-3xl font-bold text-[#85434e]">REAL VOICES</h1>
+                    <P class="text-[12px] text-[#85434e] font-serif ">Responsibility. Media. A Safer Society</P>
+                </div>
+                <div class="h-30 w-50 text-[##85434e]">
+                    <p>Real Voices is dedicated to building a media that informs without blaming, and reports with
+                        respect and empathy.</p>
+                </div>
+                <div>
+                    <p class="text-[##85434e] font-serif">Dignity always.
+                    </p>
+                </div>
+                <div class="flex flex-row gap-4 items-center">
+                    <a href=""><img src="./public/image/facebook (1).png" alt="" width="30"></a>
+                    <a href=""><img src="./public/image/instagram.png" alt="" width="30"></a>
+                    <a href=""><img src="./public/image/social.png" alt="" width="30"></a>
+                    <a href=""><img src="./public/image/video.png" alt="" width="40"></a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <a href="" class="text-[#e7000b] font-serif">EXPLORE</a>
+                <a href="">Home</a>
+                <a href="">About Us
+                </a>
+                <a href="">Explore Our Guide
+                </a>
+                <a href="">Watch Video
+                </a>
+                <a href="">Get Involved</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="flex flex-col gap-5">
+                <a href="" class="text-[#e7000b] font-serif">RESOURCES
+                </a>
+                <a href="">Better Words
+                </a>
+                <a href="">Privacy & Respect
+                </a>
+                <a href="">Media Guidelines
+                </a>
+                <a href="">Together for Change
+                </a>
+                <a href="">Impact Reports
+                </a>
+                <a href="">Community Standards</a>
+            </div>
+            <div class="flex flex-col gap-5 h-30 w-50">
+                <a href="" class="text-[#e7000b] font-serif">STAY CONNECTED
+                </a>
+                <p>Take the pledge and subscribe to our newsletter for a safer, more respectful media landscape.</p>
+                <a href="" class=" flex h-10 w-60 border-2 py-2 px-1 items-center justify-between opacity-65">entrey
+                    your email... <samp><svg class="flex justify-end items-center bg-red-700  "
+                            xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                            <path d="M6 13h6v4l6-5-6-5v4H6z"></path>
+                        </svg></samp></a>
+            </div>
+
+
+        </section>
+
     </footer>
 
 
@@ -252,7 +401,7 @@
 
 
 
-    </div>
+
 
 </body>
 
