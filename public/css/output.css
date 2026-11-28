@@ -563,6 +563,9 @@
   .resize {
     resize: both;
   }
+  .grid-flow-col {
+    grid-auto-flow: column;
+  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1439,6 +1442,9 @@
     .lg\:flex {
       display: flex;
     }
+    .lg\:grid {
+      display: grid;
+    }
     .lg\:hidden {
       display: none;
     }
@@ -1498,6 +1504,13 @@
     }
     .lg\:py-5 {
       padding-block: calc(var(--spacing) * 5);
+    }
+    .lg\:font-serif {
+      font-family: var(--font-serif);
+    }
+    .lg\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
 }
